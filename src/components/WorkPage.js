@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { DarkTheme } from "./Themes";
 import { motion } from "framer-motion";
@@ -15,18 +15,24 @@ import BigTitlte from "../subComponents/BigTitlte";
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
 
-  height: 400vh;
+  min-height: 100vh;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8rem 1.5rem 4rem 1.5rem;
 `;
 
 const Main = styled(motion.ul)`
-  position: fixed;
-  top: 12rem;
-  left: calc(10rem + 15vw);
-  height: 40vh;
+  position: relative;
+  top: auto;
+  left: auto;
+  width: min(1200px, 100%);
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
 
   color: white;
 `;
@@ -54,24 +60,7 @@ const container = {
 };
 
 const WorkPage = () => {
-  const ref = useRef(null);
-  const yinyang = useRef(null);
-
-  useEffect(() => {
-    let element = ref.current;
-
-    const rotate = () => {
-      element.style.transform = `translateX(${-window.pageYOffset}px)`;
-
-      return (yinyang.current.style.transform =
-        "rotate(" + -window.pageYOffset + "deg)");
-    };
-
-    window.addEventListener("scroll", rotate);
-    return () => {
-      window.removeEventListener("scroll", rotate);
-    };
-  }, []);
+  const yinyangStyle = { transform: "rotate(0deg)" };
 
   return (
     <ThemeProvider theme={DarkTheme}>
@@ -80,12 +69,12 @@ const WorkPage = () => {
         <SocialIcons theme="dark" />
         <PowerButton />
 
-        <Main ref={ref} variants={container} initial="hidden" animate="show">
+        <Main variants={container} initial="hidden" animate="show">
           {Work.map((d) => (
             <Card key={d.id} data={d} />
           ))}
         </Main>
-        <Rotate ref={yinyang}>
+        <Rotate style={yinyangStyle}>
           <YinYang width={80} height={80} fill={DarkTheme.text} />
         </Rotate>
 
