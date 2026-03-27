@@ -20,7 +20,7 @@ export const Work = [
     ],
 
     demo: "https://agency-website-eta.vercel.app/",
-    github: "https://github.com/codebucks27/Agency-website",
+    github: "https://github.com/AchilaDilshanYapa/EFC-Education",
   },
   {
     id: 2,
@@ -37,6 +37,6 @@ export const Work = [
     ],
 
     demo: "http://devto-clone-codebucks27.vercel.app/",
-    github: "https://github.com/codebucks27/devto-clone",
+    github: "https://github.com/AchilaDilshanYapa/library-management-system",
   },
 ];
