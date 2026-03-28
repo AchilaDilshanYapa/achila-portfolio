@@ -61,17 +61,19 @@ const Meta = styled.small`
 const posts = [
   {
     id: 1,
-    title: "How I Build Portfolio Projects",
+    title: "Monthly Fortune Teller",
     excerpt:
-      "A practical look at planning, designing and shipping portfolio projects step by step.",
+      "A fun and interactive web-based fortune telling game that reveals your future predictions based on your birth month.",
     meta: "Click hear",
+    url: "https://achiladilshanyapa.github.io/fortune-teller-monthly/",
   },
   {
     id: 2,
-    title: "Frontend Tips I Use Every Week",
+    title: "Future Predictor ",
     excerpt:
-      "My favorite small techniques for cleaner components, better styling and faster debugging.",
+      "A fun and interactive web-based fortune-telling game that generates personalized future predictions based on birth year.",
     meta: "Click hear",
+    url: "https://achiladilshanyapa.github.io/future-predictor-game/",
   },
   {
     id: 3,
@@ -80,6 +82,14 @@ const posts = [
       "A classic arcade-style car racing game built with vanilla JavaScript, HTML5, and CSS3. Features keyboard controls, obstacle avoidance, and score tracking.",
     meta: "Click hear",
     url: "https://achiladilshanyapa.github.io/SpeedXtreme-Fastest-Track/",
+  },
+  {
+    id: 4,
+    title: "Snake Game",
+    excerpt:
+      "A modern implementation of the classic Snake game with progressive difficulty levels.",
+    meta: "Click hear",
+    url: "https://achiladilshanyapa.github.io/snake-game-levels/",
   },
 ];
 
