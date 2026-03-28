@@ -79,7 +79,7 @@ const posts = [
     id: 3,
     title: "SpeedXtreme - Car Racing Game",
     excerpt:
-      "A classic arcade-style car racing game built with vanilla JavaScript, HTML5, and CSS3. Features keyboard controls, obstacle avoidance, and score tracking.",
+      "A classic arcade-style car racing game.",
     meta: "Click hear",
     url: "https://achiladilshanyapa.github.io/SpeedXtreme-Fastest-Track/",
   },
