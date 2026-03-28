@@ -41,7 +41,7 @@ const Contact = styled.a`
 const WORK = styled(NavLink)`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: calc(1rem + 2vw);
   transform: rotate(-90deg) translate(-50%, -50%);
   text-decoration: none;
